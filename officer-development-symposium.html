@@ -59,6 +59,12 @@
     ul{padding-left:15px}
     /*ul:before{content:attr(data-header);font-size:105%;font-weight:700;margin-left:-15px}*/
 
+   a[data-tooltip]{position:relative}
+a[data-tooltip]::before,a[data-tooltip]::after{position:absolute;display:none;opacity:1}
+a[data-tooltip]::before{bottom:100%;left:0;margin-bottom:10px;content:attr(data-tooltip);background:grey;color:#fff;afont-size:13px;padding:5px;border-radius:5px;white-space:nowrap;text-decoration:none;font-weight:bold}
+a[data-tooltip]::after{text-decoration:none;border-top-color:grey;border-bottom:none;bottom:100%;left:10px;margin-bottom:4px;width:0;height:0;border:6px solid transparent;content:''}
+a[data-tooltip]:hover::before,a[data-tooltip]:hover::after{display:block}
+
     @media all and (max-width: 800px) {
     .desktop{display:none}
     .mobile{display:block}
@@ -231,13 +237,18 @@ leadership and management program. For 2018 the NFCA has made Las Vegas the home
     </article>
     <div class="right-column"><div >
     <h3>Conference Details:</h3>
-	<a href="">Class Schedule</a><br />
+	<a href="/officer-development-symposium.html">Officer Training Home Page</a><br />
+	<a href="/officer-development-symposium-class-schedule.html">Proposed Class Schedule</a><br />
 	<a href="">Pricing</a><br />
 	<a href="">Attendee Registration</a><br />
 	<a href="">Vendor Registration</a><br />  
 	<a href="">Room Deal Pricing</a><br />
-	<a href="">location / map</a><br />
-	<img src="/images/orleans-hotel-map.jpg">
+	<a href="">Location & Map</a><br />
+
+<h3 style="margin-top:30px;">Sponsors</h3>
+	<a href="http://www.firehouse.com">FIREHOUSE</a><br />
+	<a href="">Sponsor</a><br />
+	<a href="">Sponsor</a><br />
 </div>
 
 
