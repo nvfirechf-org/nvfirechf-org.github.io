@@ -60,11 +60,11 @@
     ul{padding-left:15px}
     /*ul:before{content:attr(data-header);font-size:105%;font-weight:700;margin-left:-15px}*/
 
-   a[data-tooltip]{position:relative}
-a[data-tooltip]::before,a[data-tooltip]::after{position:absolute;display:none;opacity:1}
-a[data-tooltip]::before{bottom:100%;left:0;margin-bottom:10px;content:attr(data-tooltip);background:grey;color:#fff;afont-size:13px;padding:5px;border-radius:5px;white-space:nowrap;text-decoration:none;font-weight:bold}
-a[data-tooltip]::after{text-decoration:none;border-top-color:grey;border-bottom:none;bottom:100%;left:10px;margin-bottom:4px;width:0;height:0;border:6px solid transparent;content:''}
-a[data-tooltip]:hover::before,a[data-tooltip]:hover::after{display:block}
+    a[data-tooltip]{position:relative}
+    a[data-tooltip]::before,a[data-tooltip]::after{position:absolute;display:none;opacity:1}
+    a[data-tooltip]::before{bottom:100%;margin-bottom:6px;content:attr(data-tooltip);background:grey;color:#fff;afont-size:13px;padding:10px;border-radius:5px;text-decoration:none;font-weight:bold;line-height: 1.4;}
+    a[data-tooltip]::after{bottom:100%;margin-bottom:4px;width:400px;height:0;border:6px solid transparent;content:''}
+    a[data-tooltip]:hover::before,a[data-tooltip]:hover::after{display:block}
 
     @media all and (max-width: 800px) {
     .desktop{display:none}
@@ -216,7 +216,7 @@ a[data-tooltip]:hover::before,a[data-tooltip]:hover::after{display:block}
 <div class='rTableRow'><div class='rTableCell'></div><div class='rTableCell'>10:30am-10:45am</div><div class='rTableCell'><a data-tooltip='' >Break in Exhibit Hall</a></div><div class='rTableCell'><a data-tooltip='' >N/A</a></div> </div>
 <div class='rTableRow'><div class='rTableCell'></div><div class='rTableCell'>10:45am-11:45am</div><div class='rTableCell'><a data-tooltip='' >201: NFPA Fire Officer III - Leadership</a></div><div class='rTableCell'><a data-tooltip='' >TBD</a></div> </div>
 <div class='rTableRow'><div class='rTableCell'></div><div class='rTableCell'>10:45am-11:45am</div><div class='rTableCell'><a data-tooltip='' >202: After the Fire - What's Next?</a></div><div class='rTableCell'><a data-tooltip='' >Sean Scott</a></div> </div>
-<div class='rTableRow'><div class='rTableCell'></div><div class='rTableCell'>10:45am-11:45am</div><div class='rTableCell'><a data-tooltip='Overview of free and paid online services to best promote your fire department, volunteer recruitment program, fundraising and other programs you want to share with you community. Covers building your own website, getting your information displayed on nvfirechf.org/firedepartment.net, why social media is important & how to track your website's success.' >203: Tips to Get Online, Recruit Volunteers & Engage You Community</a></div><div class='rTableCell'><a data-tooltip='' >Las Estrem</a></div> </div>
+<div class='rTableRow'><div class='rTableCell'></div><div class='rTableCell'>10:45am-11:45am</div><div class='rTableCell'><a data-tooltip='Overview of free and paid online services on how to best promote your fire department, volunteer recruitment program, fundraising and other programs you want to share with you community. Covers building your own website, getting your information displayed on nvfirechf.org / firedepartment.net, why social media is important & how to track your website performance.' >203: Tips to Get Online, Recruit Volunteers & Engage You Community</a></div><div class='rTableCell'><a data-tooltip='' >Lars Estrem</a></div> </div>
 <div class='rTableRow'><div class='rTableCell'></div><div class='rTableCell'>10:45am-11:45am</div><div class='rTableCell'><a data-tooltip='' >204: The Fire Chief and Higher Education: Is it Necessary?</a></div><div class='rTableCell'><a data-tooltip='' >David Becker</a></div> </div>
 <div class='rTableRow'><div class='rTableCell'></div><div class='rTableCell'>11:45am-1:15pm</div><div class='rTableCell'><a data-tooltip='' >Lunch in Exhibit Hall</a></div><div class='rTableCell'><a data-tooltip='' >N/A</a></div> </div>
 <div class='rTableRow'><div class='rTableCell'></div><div class='rTableCell'>1:15pm-2:10pm</div><div class='rTableCell'><a data-tooltip='' >301: NFPA Fire Officer III - Human Resource Management</a></div><div class='rTableCell'><a data-tooltip='' >TBD</a></div> </div>
