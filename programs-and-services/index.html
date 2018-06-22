@@ -66,6 +66,14 @@
     a[data-tooltip]::after{bottom:100%;margin-bottom:4px;width:400px;height:0;border:6px solid transparent;content:''}
     a[data-tooltip]:hover::before,a[data-tooltip]:hover::after{display:block}
 
+    /* https://codepen.io/mikestreety/pen/yVNNNm */
+    .tabs{display:flex;flex-wrap:wrap}
+    .tabs label{order:1;padding:5px 10px;margin-right:10px;cursor:pointer;background:silver;font-weight:700;}
+    .tabs .tab{order:99;width:100%;display:none;padding:5px;background:#fff}
+    .tabs input[type="radio"]{display:none}
+    .tabs input[type="radio"]:checked + label{background-color:black;color:#c7c7c7;}
+    .tabs input[type="radio"]:checked + label + .tab{display:block}
+    .tab p{margin:0 5px 5px 0}
     @media all and (max-width: 800px) {
     .desktop{display:none}
     .mobile{display:block}
@@ -193,9 +201,8 @@
 </div>
 
         <img class="header-image" src="/images/header.jpg" alt="header image" />
-        <p style="border: 3px solid grey;font-weight: bold;font-size:large;background-color: yellow;padding:10px;margin:5px;"><a href="/officer-development-symposium.html">Las Vegas Officer Development Symposium & Expo - Sept. 10-12, 2018</a></p>
+        <p style="border: 3px solid grey;font-weight: bold;font-size:large;background-color: yellow;padding:10px;margin:5px;"><a href="/officer-development-symposium/">Las Vegas Officer Development Symposium & Expo - Sept. 10-12, 2018</a></p>
     </header>
-
 
     <article class="article">
         <h1>Programs and Services</h1>
