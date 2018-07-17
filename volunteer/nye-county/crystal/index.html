@@ -89,6 +89,15 @@
 
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=113028205451796&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
 <div class="flex-container">
     <header style="padding:0">
         <div class="navbar mobile">
@@ -239,7 +248,10 @@ Fire Department information and photos on nvfirechf.org is sourced from and copy
 The source of fire staiton information is: <a href="https://www.firedepartment.net/directory/nevada/nye-county/crystal">https://www.firedepartment.net/directory/nevada/nye-county/crystal</a>
 </div>
     </article>
-    <div class="right-column"><div class="attention">
+    <div class="right-column"><!-- Start facebook code for share & like button -->
+<div class="fb-like" data-href="https://www.nvfirechf.org/" data-width="250" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+
+<div class="attention">
     <h3><span style="color:red">WANT TO BE A FIREFIGHTER?</span></h3>
     Most firefighting jobs are highly competitive &amp; require a strong resume. Volunteers gain experience &amp; training that strengthens a resume.
     <br />
