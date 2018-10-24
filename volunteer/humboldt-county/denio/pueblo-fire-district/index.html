@@ -210,7 +210,7 @@
     .page-title{grid-area: page-title;}
     .station-image{grid-area: station-image;}
     .logo{grid-area: logo;}
-    .plea{grid-area: plea;}
+    .addinfo{grid-area: addinfo;}
     .volunteer{grid-area: volunteer;}
     .contact-info{grid-area: contact-info;}
     .fire-chief{grid-area: fire-chief;}
@@ -224,12 +224,12 @@
     .station-page {padding:10px;grid-gap:10px;background-color:white;display:grid;}
     .item{text-align: center; box-sizing: border-box;}
     .station-page{
-        grid-template-areas:"breadcrumb" "page-title" "station-image" "logo" "plea" "volunteer" "contact-info" "fire-chief" "mission-statement" "statistics" "firestations";
+        grid-template-areas:"breadcrumb" "page-title" "station-image" "logo" "addinfo" "volunteer" "contact-info" "fire-chief" "mission-statement" "statistics" "firestations";
     }
     
     @media only screen and (min-width: 700px) {
         .station-page{
-            grid-gap: 10px;grid-template-columns: 2fr 1fr; grid-template-areas: "breadcrumb breadcrumb" "page-title page-title" "station-image logo" "plea plea" "volunteer volunteer" "contact-info fire-chief" "mission-statement mission-statement" "statistics statistics" "firestations firestations";
+            grid-gap: 10px;grid-template-columns: 2fr 1fr; grid-template-areas: "breadcrumb breadcrumb" "page-title page-title" "station-image logo" "addinfo addinfo" "volunteer volunteer" "contact-info fire-chief" "mission-statement mission-statement" "statistics statistics" "firestations firestations";
         }
     }
     .item img{padding:5px;}
@@ -261,8 +261,8 @@
         
         <img class="bordered-box img-resize" style="max-width:200px; height: auto;" src="https://firedepartment.net/images/no-logo.png" alt="No logo provided" width="200" height="200">
     </div>
-    <div class="item plea box-content" style="text-align: left; display: block">
-        <p>Pueblo Fire District is a volunteer fire department. This means that our community's safety depends on people like you contributing their time as volunteers. Please, help the Denio community by applying to become a volunteer firefighter.</p>
+    <div class="addinfo bordered-box" style="color: #f00; padding: 5px;">
+        <div style="text-align: center;">Images &amp; information on this page can be updated by creating an account on <a href="https://www.firedepartment.net/edit-fire-department-info" target="_blank">FireDepartment.net</a></div>
     </div>
     <div class="item volunteer bordered-box">
         <div class="box-title">
@@ -271,6 +271,9 @@
         <div class="box-content">
             
                 <strong style="color:red;font-size:large ">Pueblo Fire District is accepting volunteer applications</strong>
+                <div class="box-content" style="text-align: left; display: block">
+                    <p>Pueblo Fire District is a volunteer fire department. This means that our community's safety depends on people like you contributing their time as volunteers. Please, help the Denio community by applying to become a volunteer firefighter.</p>
+                </div>
                 <div class="sub-column" style="display: none;">
                       <div><strong>Questions Contact:</strong><br>
                         <br>

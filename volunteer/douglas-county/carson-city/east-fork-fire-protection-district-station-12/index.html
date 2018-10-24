@@ -210,6 +210,7 @@
     .page-title{grid-area: page-title;}
     .station-image{grid-area: station-image;}
     .logo{grid-area: logo;}
+    .addinfo{grid-area: addinfo;}
     .volunteer{grid-area: volunteer;}
     .contact-info{grid-area: contact-info;}
     .fire-chief{grid-area: fire-chief;}
@@ -220,12 +221,12 @@
     .station-page {padding:10px;grid-gap:10px;background-color:white;display:grid;}
     .item{text-align: center; box-sizing: border-box;}
     .station-page{
-        grid-template-areas:"breadcrumb" "page-title" "station-image" "logo" "volunteer" "contact-info" "fire-chief";
+        grid-template-areas:"breadcrumb" "page-title" "station-image" "logo" "addinfo" "volunteer" "contact-info" "fire-chief";
     }
     
     @media only screen and (min-width: 700px) {
         .station-page{
-            grid-gap: 10px;grid-template-columns: 2fr 1fr; grid-template-areas: "breadcrumb breadcrumb" "page-title page-title" "station-image logo" "volunteer volunteer" "contact-info fire-chief";
+            grid-gap: 10px;grid-template-columns: 2fr 1fr; grid-template-areas: "breadcrumb breadcrumb" "page-title page-title" "station-image logo" "addinfo addinfo" "volunteer volunteer" "contact-info fire-chief";
         }
     }
     .item img{padding:5px;}
@@ -261,6 +262,9 @@
         
         <img class="bordered-box img-resize" style="max-width:200px; height: auto;" src="https://firedepartment.net/directory/nevada/douglas-county/minden/east-fork-fire-protection-district/images/east-fork-fire-protection-district-logo.jpg" alt="Station 12 Logo" width="439" height="456">
     </div>
+    <div class="addinfo bordered-box" style="color: #f00; padding: 5px;">
+        <div style="text-align: center;">Images &amp; information on this page can be updated by creating an account on <a href="https://www.firedepartment.net/edit-fire-department-info" target="_blank">FireDepartment.net</a></div>
+    </div>
     <div class="item volunteer bordered-box">
         <div class="box-title">
             Volunteer Recruitment Information
@@ -269,6 +273,9 @@
         <div class="box-content">
             
                 <strong style="color:red;font-size:large">East Fork Fire Protection District - Station 12 is accepting volunteer applications</strong>
+                <div class="box-content" style="text-align: left; display: none">
+                    <p>Station 12 is a mostly career fire department. This means that our community's safety depends on people like you contributing their time as volunteers. Please, help the Carson City community by applying to become a volunteer firefighter.</p>
+                </div>
                 <div class="sub-column" style="display: block;">
                       <div><strong>Questions Contact:</strong><br>
                         Tim Soule<br>
